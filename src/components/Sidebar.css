@@ -1,0 +1,36 @@
+.nav-sidebar {
+  left: -140%;
+  transition: 850ms;
+}
+.div {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  z-index: 100;
+  position: fixed;
+}
+
+.nav-sidebar.active {
+  left: 0;
+  transition: 450ms;
+}
+.profile-container {
+  position: fixed;
+  background: white;
+  height: 100vh;
+}
+
+@media (max-width: 967px) {
+  .nav-sidebar.active {
+    position: absolute;
+    position: fixed;
+  }
+  .nav-sidebar {
+    position: absolute;
+    position: fixed;
+  }
+
+  .profile-container {
+    position: unset;
+  }
+}
